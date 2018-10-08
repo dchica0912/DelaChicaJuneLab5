@@ -55,11 +55,11 @@ public class Main2Activity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void process(View v){
+    public void processDangwa(View v){
         Intent i = null, chooser = null;
         if(v.getId()== R.id.btnMap){
             i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("geo:14.610400,120.991916"));
+            i.setData(Uri.parse("geo:14.615304,120.988990"));
             chooser = Intent.createChooser(i, "Select your map app");
             startActivity(i);
         }
